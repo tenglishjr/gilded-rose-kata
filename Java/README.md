@@ -1,5 +1,6 @@
 <h1>GUILDED ROSE KATA</h1>
-<h4><i>Technical Showcase by TJ English (branch: <b>tjenglish-tech-showcase)</b></i></h4>
+<h5><i>Technical Showcase by TJ English</i></h5>
+<h6><i>(branch: <b>tjenglish-tech-showcase)</b></i></h6>
 
 ***
 
