@@ -4,7 +4,7 @@
 
 ***
 
-<h4><u>Business Requirements:</u></h4>
+<h3><b>BUSINESS REQUIREMENTS</b></h3>
 
 Hi and welcome to team Gilded Rose.
 
