@@ -1,6 +1,6 @@
 package com.gildedrose;
 
-import static sun.swing.MenuItemLayoutHelper.max;
+import static java.lang.Math.max;
 
 public class DefaultUpdater implements ItemUpdater {
 
