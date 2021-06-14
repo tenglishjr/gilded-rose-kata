@@ -4,6 +4,8 @@
 
 ***
 
+<h3><b>BUSINESS REQUIREMENTS</b></h3>
+
 Hi and welcome to team Gilded Rose.
 
 As you know, we are a small inn with a prime location in a prominent city ran
