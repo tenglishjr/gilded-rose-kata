@@ -4,6 +4,25 @@
 
 ***
 
+<h3><b>PREREQUISITES</b></h3>
+
+<h5><b>Java 15</b> and <b>Gradle</b> must be installed.</h5>
+
+***
+
+<h3><b>RUNNING THE PROJECT</b></h3>
+
+<h5>Once you have installed the above prerequisite dependencies, open the project in your IDE of choice.</h5>
+
+<h5>Open a terminal window and navigate to the Java package of the project directory:</h5> `/gilded-rose-kata/Java`
+
+<h5>Execute the "gradle build" command to build the project and execute the tests:</h5> `./gradlew build`
+
+<h5>To view a report of the test results: in the browser of your choice, open the html file located here:</h5> `/build/reports/tests/test/index.html`
+
+
+***
+
 <h3><b>BUSINESS REQUIREMENTS</b></h3>
 
 Hi and welcome to team Gilded Rose.
