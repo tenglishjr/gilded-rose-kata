@@ -1,5 +1,7 @@
 plugins {
     id 'java'
+    id 'jacoco'
+//    id 'info.solidsoft.pitest' version '1.5.1'
 }
 
 repositories {
@@ -11,6 +13,8 @@ dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-params:5.6.2'
     testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.6.2'
     testImplementation 'com.approvaltests:approvaltests:5.0.0'
+
+//    testCompile 'info.solidsoft.gradle.pitest:gradle-pitest-plugin:1.4.0'
 }
 
 group = 'com.gildedrose'
@@ -20,3 +24,7 @@ sourceCompatibility = '1.15'
 test {
     useJUnitPlatform()
 }
+
+check.dependsOn(jacocoTestCoverageVerification)
+
+project.tasks.test.finalizedBy(jacocoTestReport)
