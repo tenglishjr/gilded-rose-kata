@@ -1,13 +1,8 @@
 package com.gildedrose;
 
-public class AgedBrieUpdater extends DefaultUpdater {
+import static java.lang.Math.min;
 
-    private final QualityIncreaser qualityIncreaser = new QualityIncreaser() {
-        @Override
-        protected int getQualityIncrement(int sellIn) {
-            return sellDateHasPassed(sellIn) ? 2 : 1;
-        }
-    };
+public class AgedBrieUpdater extends DefaultUpdater {
 
     @Override
     public void updateQuality(Item item) {
@@ -15,6 +10,8 @@ public class AgedBrieUpdater extends DefaultUpdater {
     }
 
     private int increaseQuality(int quality, int sellIn) {
-        return qualityIncreaser.increaseQuality(quality, sellIn);
+        quality = quality + (sellDateHasPassed(sellIn) ? 2 : 1);
+
+        return min(quality, MAX_QUALITY);
     }
 }

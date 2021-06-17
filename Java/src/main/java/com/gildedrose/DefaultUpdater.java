@@ -4,6 +4,8 @@ import static java.lang.Math.max;
 
 public class DefaultUpdater implements ItemUpdater {
 
+    protected static final int MAX_QUALITY = 50;
+
     @Override
     public void updateSellIn(Item item) {
             item.sellIn--;
