@@ -182,6 +182,15 @@ class GildedRoseTest {
         assertEquals(0, getFirstItem().quality);
     }
 
+    @Test
+    public void itemToStringContainsAllItemMetadata() {
+        app = createAppWithOneItem(ARBIT_NAME, ARBIT_SELLIN, ARBIT_QUALITY);
+        assertEquals(
+            ARBIT_NAME + ", " + ARBIT_SELLIN + ", " + ARBIT_QUALITY,
+            getFirstItem().toString()
+        );
+    }
+
     /************ Helper methods *************/
 
     private GildedRose createAppWithOneItem(String name, int sellIn, int quality) {
