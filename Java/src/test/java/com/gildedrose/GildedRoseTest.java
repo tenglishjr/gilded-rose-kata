@@ -2,7 +2,10 @@ package com.gildedrose;
 
 import org.junit.jupiter.api.Test;
 
-import static com.gildedrose.ItemType.*;
+import static com.gildedrose.ItemType.AGED_BRIE;
+import static com.gildedrose.ItemType.BACKSTAGE_PASSES;
+import static com.gildedrose.ItemType.CONJURED;
+import static com.gildedrose.ItemType.SULFURAS;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class GildedRoseTest {
